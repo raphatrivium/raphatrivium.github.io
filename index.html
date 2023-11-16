@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CMS Offline Software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="copyright" content="1954-2023 CERN">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+  <style>
+
+  body {
+    padding: 40px;
+  }
+  table td {
+    border: 1px solid;
+    padding: 4px;
+  }
+  table > thead {
+    background: rgb(51,51,51);
+    color: #ffffff;
+  }
+  p {
+    font-size: 17.5px;
+    font-weight: 300;
+    line-height: 1.25;
+  }
+  .header-link {
+    position: absolute;
+    left: 1.3em;
+    opacity: 0;
+
+    -webkit-transition: opacity 0.2s ease-in-out 0.1s;
+    -moz-transition: opacity 0.2s ease-in-out 0.1s;
+    -ms-transition: opacity 0.2s ease-in-out 0.1s;
+  }
+
+  div.footnotes p {
+    font-size: 90%;
+  }
+
+  div.footnotes code {
+    font-size: 90%;
+  }
+
+  h2:hover .header-link,
+  h3:hover .header-link,
+  h4:hover .header-link,
+  h5:hover .header-link,
+  h6:hover .header-link {
+    opacity: 1;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <a class="brand" href="index.html">CMSSW on GitHub</a>
+      <ul class="nav">
+        
+         <li><a href="https://github.com/cms-sw/cmssw">Project page</a></li>
+        
+         <li><a href="https://github.com/cms-sw/cmssw/issues/new">Feedback</a></li>
+        
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span9" style="overflow-x: scroll">
+        <h1 id="welcome-to-cms-and-cmssw">Welcome to CMS and CMSSW</h1>
+
+<tr>
+    <td> <img src="images/jets_v1.png" alt="Drawing" width="50%" align="center" /> </td>
+</tr>
+
+<p>The LHC smashes groups of protons together at close to the speed of light: 40
+million times per second and with seven times the energy of the most powerful
+accelerators built up to now. Many of these will just be glancing blows but
+some will be head on collisions and very energetic. When this happens some of
+the energy of the collision is turned into mass and previously unobserved,
+short-lived particles – which could give clues about how Nature behaves at a
+fundamental level - fly out and into the detector. Our work includes the experimental
+discovery of the <a href="http://home.cern/topics/higgs-boson">Higgs boson</a>, which lead to the
+award of a Nobel prize for the underlying theory that predicted the Higgs boson
+as an important piece of the standard model theory of particle physics.</p>
+
+<p>CMS is a particle detector that is designed to see a wide range of particles
+and phenomena produced in high-energy collisions in the LHC. Like a cylindrical
+onion, different layers of detectors measure the different particles, and use
+this key data to build up a picture of events at the heart of the collision.</p>
+
+<p>Many of CMS Software components (CMSSW) are <a href="https://github.com/cms-sw">hosted on
+Github</a>. You can find here a <a href="faq.html">few FAQ</a>
+and tutorials on how develop in CMSSW.</p>
+
+      </div>
+      <div class="span3">
+        <h3 id='quick_start'>Quick start</h3>
+        <ul>
+          <li><a href='index.html'>Main page</a></li>
+          <li><a href='faq.html'>FAQ: CMSSW on Github</a></li>
+          <li><a href="cms_coding_rules.html">CMS Naming, Coding, And Style Rules</a></li>
+          <li><a href='tutorial.html'>Proposing changes to CMSSW</a></li>
+          <li><a href='singularity.html'>Setting up CMS environment using Singularity</a><font color="red"> (new)</font></li>
+          <li><a href='venv.html'>Python virtual environment in CMSSW</a><font color="red"> (new)</font></li>
+          <li><a href='PRWorkflow.html'>CMSSW pull request approval workflow</a></li>
+          <li><a href='tutorial-collaborating-with-peers.html'>Collaborating with peers</a></li>
+          <li><a href='tutorial-merge-usercode-repository-in-cmssw.html'>Working with CMSSW and UserCode</a></li>
+          <li><a href='tutorial-resolve-conflicts.html'>Resolving conflicts & porting features</a></li>
+          <li><a href='tutorial-proxy.html'>How to use git through a proxy</a></li>
+          <li><a href='cmsdist.html'>Building external packages</a><font color="red"> (new)</font></li>
+        </ul>
+        <h3 id='cmssw-ci'>Release Management</h3>
+        <ul>
+          <li><a href='https://cmssdt.cern.ch/SDT/ReleaseNotes'>CMSSW release notes</a></li>
+          <li><a href='build-release.html'>Building a CMSSW release</a></li>
+          <li><a href='https://cmssdt.cern.ch/SDT/html/cmssdt-ib'>Integration Builds results</a></li>
+          <li><a href='start-new-cycle.html'>Starting a new release cycle</a></li>
+          <li><a href='forward-ports.html'>Forward ports</a></li>
+          <li><a href='managing-properties.html'>Managing users and categories</a></li>
+          <li><a href='categories.html'>List categories and packages</a></li>
+          <!-- li><a href='latestIBs.html'>Latest available IBs</a></li -->
+          <li><a href='/stats/pending-all-prs.html'>List of pending PRs</a></li>
+          <li><a href='/stats/pending-prs-circle.html'>Circle of pending PRs</a></li>
+          <li><a href='http://cms-sw.github.io/cms-bot/index.html'>CMS-bot documentation</a></li>
+          <li><a href='cms-bot-cmssw-cmds.html'>CMS-bot commands</a></li>
+        </ul>
+        <h3 id='infrastructure'>Infrastructure setup</h3>
+        <ul>
+          <li><a href='infrastructure-monitoring.html'>Monitoring</a></li>
+          <li><a href='infrastructure-secrets.html'>Managing secrets with puppet</a></li>
+          <li><a href='infrastructure-builders-lifecycle.html'>Setting up builder machines</a></li>
+          <li><a href='arm64-cmsbuilder.html'>Setting up builder machines [aarch64]</a></li>    
+           <li><a href='power8-cmsbuilder.html'>Setting up builder machines [power8]</a></li>     
+          <li><a href='infrastructure-cmsdev-setup.html'>Setting up cmsdev machines</a></li>
+        </ul>  
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span4"></div>
+      <div style="text-align: center; padding-top: 50px;" class="span4"><a style="font-size: 80%;" href="http://copyright.web.cern.ch">Copyright 1954-2023 CERN</a></div>
+      <div class="span4"></div>
+    </div>
+  </div>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+  $(function() {
+    return $("h2, h3, h4, h5, h6").each(function(i, el) {
+      var $el, icon, id;
+      $el = $(el);
+      id = $el.attr('id');
+      icon = '<i class="fa fa-link"></i>';
+      if (id) {
+        return $el.prepend($("<a />").addClass("header-link").attr("href", "#" + id).html(icon));
+      }
+    });
+  });
+  </script>
+</body>
+</html>
 
